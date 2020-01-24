@@ -1,3 +1,6 @@
 (executable
- (name tweets_and_users)
+ (name tweets_and_users) (modules tweets_and_users)
+ (libraries cohttp lwt cohttp-lwt-unix))
+(executable
+ (name tweets_and_users_two)(modules tweets_and_users_two)
  (libraries cohttp lwt cohttp-lwt-unix))

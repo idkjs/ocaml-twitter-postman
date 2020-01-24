@@ -97,4 +97,4 @@ Hello, postman!
 
 The source code for this post is [here](https://github.com/idkjs/ocaml-twitter-postman/tree/master/hello-postman).
 
-That was quick. Check out Part 2 to get a bit more serious.
+That was quick. Check out [Part 2](https://dev.to/idkjs/the-postman-rides-ocaml-part-2-58p7) to get a bit more serious.
