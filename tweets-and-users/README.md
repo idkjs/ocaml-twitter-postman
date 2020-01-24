@@ -22,14 +22,14 @@ This is straight from the docs:
 > ## How to generate a Bearer Token
 
 > Copy the following cURL request into your command line after making changes to the following consumer API keys previously obtained from your Twitter app. Note that the consumer API keys used on this page have been disabled and will not work for real requests.
-`API key <API key> e.g.xvz1evFS4wEEPTGEFPHBog`
-`API secret key <API secret key> e.g. L8qq9PZyRg6ieKGEKhZolGC0vJWLw8iEJ88DRdyOg`
+> `API key <API key> e.g.xvz1evFS4wEEPTGEFPHBog`
+> `API secret key <API secret key> e.g. L8qq9PZyRg6ieKGEKhZolGC0vJWLw8iEJ88DRdyOg`
 
 > ```curl
 > curl -u '<API key>:<API secret key>' \
 >  --data 'grant_type=client_credentials' \
 >  'https://api.twitter.com/oauth2/token'
->```
+> ```
 
 > Here's an example of how the curl request should look with your API keys entered:
 
@@ -37,19 +37,19 @@ This is straight from the docs:
 > curl -u 'xvz1evFS4wEEPTGEFPHBog:L8qq9PZyRg6ieKGEKhZolGC0vJWLw8iEJ88DRdyOg' \
 >  --data 'grant_type=client_credentials' \
 >  'https://api.twitter.com/oauth2/token'
->```
+> ```
 
 > Here is what the response would look like. Note that this is a decommissioned Bearer Token:
 
->```json
->{"token_type":"bearer",>"access_token":"AAAAAAAAAAAAAAAAAAAAAMLheAAAAAAA0%2BuSeid%2BULvsea4JtiGRiSDSJSI%3DEUifiRBkKG5E2XzMDjRfl76ZC9Ub0wnz4XsNiRVBChTYbJcE3F"}
->```
+> ```json
+> {"token_type":"bearer",>"access_token":"aRjeMU9YWuP5aS8trretKALXhcjBpQ7xY0TJBwq8Dhl1sw3GkRX5VxeyzfqDtqiwAueS9rHbA5PNzr292iE6D1DMwbqLXErMVuhOOzREtZ9eL1FSFTBw6PCVnZmWUtQl3vfiWMaGOdg3gmkQjPLBWqabOcgsufJFdUID3VWrGUo4mT9Bscuq9WZ4Ey6itIMM5InH3mjb"}
+> ```
 
->Our Bearer Token used to authenticate to resources with OAuth 2.0 would be:
+> Our Bearer Token used to authenticate to resources with OAuth 2.0 would be:
 
->```sh
->AAAAAAAAAAAAAAAAAAAAAMLheAAAAAAA0%2BuSeid%2BULvsea4JtiGRiSDSJSI%3DEUifiRBkKG5E2XzMDjRfl76ZC9Ub0wnz4XsNiRVBChTYbJcE3F
->```
+> ```sh
+> aRjeMU9YWuP5aS8trretKALXhcjBpQ7xY0TJBwq8Dhl1sw3GkRX5VxeyzfqDtqiwAueS9rHbA5PNzr292iE6D1DMwbqLXErMVuhOOzREtZ9eL1FSFTBw6PCVnZmWUtQl3vfiWMaGOdg3gmkQjPLBWqabOcgsufJFdUID3VWrGUo4mT9Bscuq9WZ4Ey6itIMM5InH3mjb
+> ```
 
 Once you have your token you want to open up `postman` (download it at postman.io if you dont have it.).
 
@@ -57,60 +57,60 @@ Once you have all that set up, go ahead and click the blue `send` button. My `js
 
 ```json
 {
-    "data": [
-        {
-            "created_at": "2013-12-14T04:35:55.000Z",
-            "description": "The voice of Twitter's #DevRel team, and your official source for updates, news, & events about Twitter's API.\n\nNeed help? Visit https://t.co/DVDf7qKyS9",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "start": 0,
-                            "end": 23,
-                            "url": "https://t.co/3ZX3TNiZCY",
-                            "expanded_url": "https://developer.twitter.com/en/community",
-                            "display_url": "developer.twitter.com/en/community"
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": [
-                        {
-                            "start": 129,
-                            "end": 152,
-                            "url": "https://t.co/DVDf7qKyS9",
-                            "expanded_url": "http://twittercommunity.com",
-                            "display_url": "twittercommunity.com"
-                        }
-                    ],
-                    "hashtags": [
-                        {
-                            "start": 23,
-                            "end": 30,
-                            "tag": "DevRel"
-                        }
-                    ]
-                }
-            },
-            "id": "2244994945",
-            "location": "127.0.0.1",
-            "most_recent_tweet_id": "1214947767250030592",
-            "name": "Twitter Dev",
-            "pinned_tweet_id": "1214281000932593667",
-            "profile_image_url": "https://pbs.twimg.com/profile_images/880136122604507136/xHrnqf1T_normal.jpg",
-            "protected": false,
-            "stats": {
-                "followers_count": 506515,
-                "following_count": 1707,
-                "tweet_count": 3498,
-                "listed_count": 1641
-            },
-            "url": "https://t.co/3ZX3TNiZCY",
-            "username": "TwitterDev",
-            "verified": true,
-            "format": "detailed"
+  "data": [
+    {
+      "created_at": "2013-12-14T04:35:55.000Z",
+      "description": "The voice of Twitter's #DevRel team, and your official source for updates, news, & events about Twitter's API.\n\nNeed help? Visit https://t.co/DVDf7qKyS9",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "start": 0,
+              "end": 23,
+              "url": "https://t.co/3ZX3TNiZCY",
+              "expanded_url": "https://developer.twitter.com/en/community",
+              "display_url": "developer.twitter.com/en/community"
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "start": 129,
+              "end": 152,
+              "url": "https://t.co/DVDf7qKyS9",
+              "expanded_url": "http://twittercommunity.com",
+              "display_url": "twittercommunity.com"
+            }
+          ],
+          "hashtags": [
+            {
+              "start": 23,
+              "end": 30,
+              "tag": "DevRel"
+            }
+          ]
         }
-    ]
+      },
+      "id": "2244994945",
+      "location": "127.0.0.1",
+      "most_recent_tweet_id": "1214947767250030592",
+      "name": "Twitter Dev",
+      "pinned_tweet_id": "1214281000932593667",
+      "profile_image_url": "https://pbs.twimg.com/profile_images/880136122604507136/xHrnqf1T_normal.jpg",
+      "protected": false,
+      "stats": {
+        "followers_count": 506515,
+        "following_count": 1707,
+        "tweet_count": 3498,
+        "listed_count": 1641
+      },
+      "url": "https://t.co/3ZX3TNiZCY",
+      "username": "TwitterDev",
+      "verified": true,
+      "format": "detailed"
+    }
+  ]
 }
 ```
 
@@ -223,7 +223,7 @@ Now we finally get to run `_build/default/tweets_and_users.exe`:
 Fatal error: exception (Failure "No SSL or TLS support compiled into Conduit")
 ```
 
-Wow. What in the world does that mean? I searched the web but came up with nothing helpful. I then searched `No SSL or TLS support compiled into Conduit` in the [discord #ocaml channel]() and found this [post](https://discordapp.com/channels/235176658175262720/235200837608144898/542804296136392706). The response from the always helpful [@_anmonteiro](https://twitter.com/_anmonteiro) says you need to add [`lwt_ssl`](https://opam.ocaml.org/packages/lwt_ssl/) or [`tls`](https://opam.ocaml.org/packages/tls/) if you want ssl support. Let try `lwt_ssl` first.
+Wow. What in the world does that mean? I searched the web but came up with nothing helpful. I then searched `No SSL or TLS support compiled into Conduit` in the [discord #ocaml channel]() and found this [post](https://discordapp.com/channels/235176658175262720/235200837608144898/542804296136392706). The response from the always helpful [@\_anmonteiro](https://twitter.com/_anmonteiro) says you need to add [`lwt_ssl`](https://opam.ocaml.org/packages/lwt_ssl/) or [`tls`](https://opam.ocaml.org/packages/tls/) if you want ssl support. Let try `lwt_ssl` first.
 
 ```sh
 opam install lwt_ssl
@@ -269,7 +269,56 @@ Let try running it again:
 returns:
 
 ```json
-{"data":[{"created_at":"2013-12-14T04:35:55.000Z","description":"The voice of Twitter's #DevRel team, and your official source for updates, news, & events about Twitter's API.\n\nNeed help? Visit https://t.co/DVDf7qKyS9","entities":{"url":{"urls":[{"start":0,"end":23,"url":"https://t.co/3ZX3TNiZCY","expanded_url":"https://developer.twitter.com/en/community","display_url":"developer.twitter.com/en/community"}]},"description":{"urls":[{"start":129,"end":152,"url":"https://t.co/DVDf7qKyS9","expanded_url":"http://twittercommunity.com","display_url":"twittercommunity.com"}],"hashtags":[{"start":23,"end":30,"tag":"DevRel"}]}},"id":"2244994945","location":"127.0.0.1","most_recent_tweet_id":"1214947767250030592","name":"Twitter Dev","pinned_tweet_id":"1214281000932593667","profile_image_url":"https://pbs.twimg.com/profile_images/880136122604507136/xHrnqf1T_normal.jpg","protected":false,"stats":{"followers_count":506517,"following_count":1707,"tweet_count":3498,"listed_count":1641},"url":"https://t.co/3ZX3TNiZCY","username":"TwitterDev","verified":true,"format":"detailed"}]}
+{
+  "data": [
+    {
+      "created_at": "2013-12-14T04:35:55.000Z",
+      "description": "The voice of Twitter's #DevRel team, and your official source for updates, news, & events about Twitter's API.\n\nNeed help? Visit https://t.co/DVDf7qKyS9",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "start": 0,
+              "end": 23,
+              "url": "https://t.co/3ZX3TNiZCY",
+              "expanded_url": "https://developer.twitter.com/en/community",
+              "display_url": "developer.twitter.com/en/community"
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "start": 129,
+              "end": 152,
+              "url": "https://t.co/DVDf7qKyS9",
+              "expanded_url": "http://twittercommunity.com",
+              "display_url": "twittercommunity.com"
+            }
+          ],
+          "hashtags": [{ "start": 23, "end": 30, "tag": "DevRel" }]
+        }
+      },
+      "id": "2244994945",
+      "location": "127.0.0.1",
+      "most_recent_tweet_id": "1214947767250030592",
+      "name": "Twitter Dev",
+      "pinned_tweet_id": "1214281000932593667",
+      "profile_image_url": "https://pbs.twimg.com/profile_images/880136122604507136/xHrnqf1T_normal.jpg",
+      "protected": false,
+      "stats": {
+        "followers_count": 506517,
+        "following_count": 1707,
+        "tweet_count": 3498,
+        "listed_count": 1641
+      },
+      "url": "https://t.co/3ZX3TNiZCY",
+      "username": "TwitterDev",
+      "verified": true,
+      "format": "detailed"
+    }
+  ]
+}
 ```
 
 And it works!
