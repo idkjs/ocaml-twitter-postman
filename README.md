@@ -94,3 +94,5 @@ Hello, postman!
 ```
 
 9. Add a `OCaml.gitignore` file. You can find the `github` template [here](https://github.com/github/gitignore/blob/master/OCaml.gitignore)
+
+That was quick. Check out Part 2 to get a bit more serious.
