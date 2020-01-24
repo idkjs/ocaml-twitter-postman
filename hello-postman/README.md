@@ -83,14 +83,14 @@ I don't remember where I stole this file from but thank you, nonetheless.
 ```sh
 make clean
 make
-_build/default/hello_postman.exe
+dune exec ./hello_postman.exe
 
 # output
 ➜  hello-postman make
 dune build
 Info: Creating file dune-project with this contents:
 | (lang dune 2.1)
-➜  hello-postman _build/default/hello_postman.exe
+➜  hello-postman dune exec ./hello_postman.exe
 Hello, postman!
 ```
 
