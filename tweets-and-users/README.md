@@ -326,4 +326,6 @@ developer.twitter.com/en/community"}]},"description":{"urls":[{"start":129,"end"
 
 Well that does it for this episode of `coding in the open`. Though I don't think this project fully complies with the principle, talking to you helps me learn and remember. I encourage you to teach what you are learning. Besides all that, I end up referring back to my own posts to see how I did something so have at it.
 
+The source code for this post is [here](https://github.com/idkjs/ocaml-twitter-postman/tree/master/tweets-and-users).
+
 Thanks.
