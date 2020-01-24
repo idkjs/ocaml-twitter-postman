@@ -1,4 +1,16 @@
-# OCaml Postman Twitter Examples
+---
+title: The Postman Rides OCaml - Part 1
+published: false
+description: OCaml Postman Twitter Examples Setup
+tags: ocaml, postman, twitter
+series: The Postman Rides OCaml
+---
+
+![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/4bfpk9fbjm65jun7puxr.png)
+
+<a href="https://www.getpostman.com/"><img src="https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png" /></a>
+
+This is a walkthrough on how to setup a project so we can run some `http` requests against the `Twitter API` with `OCaml`. If you already now how to do this, you can skip to the next articles in this series. Have at it!
 
 ## Setup
 
