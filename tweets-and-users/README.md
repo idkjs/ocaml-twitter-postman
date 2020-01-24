@@ -1,14 +1,16 @@
+
 ---
-title: Running the Tweets and Users Example with Postman and OCaml - Part 2
-published: false
-description: Using the Twitter API with OCaml
-tags: ocaml, postman, twitter, opam, dune
-series: Using the Twitter API with OCaml and Postman.io
+title: The Postman Rides OCaml - Part 2
+published: true
+description: Using the Twitter API with OCaml and Postman.io
+tags: ocaml, postman, twitter
+series: The Postman Rides OCaml
 ---
 
 <div class="center">
 <a href="https://www.getpostman.com/"><img src="https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png" /></a>
 <a href="https://ocaml.org/"><img src="https://ocaml.org/img/colour-logo-white.svg" /></a>
+<a href="https://dev.to/idkjs/the-postman-rides-ocaml-part-2-58p7">The Postman Rides OCaml on dev.to</a>
 </div>
 
 The `Twitter` docs for this are [here](https://developer.twitter.com/en/docs/labs/tweets-and-users/quick-starts/get-users). Let me say that the `Twitter` docs are all over the place. You will find dead links, unclear explanations and circular doc references and links. This a good part of the reason why I am writing this up, so I can refer back to it.
