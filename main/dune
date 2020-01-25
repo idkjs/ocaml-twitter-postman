@@ -1,3 +1,3 @@
 (executable
  (name main)
- (libraries postman))
+ (libraries postman yojson))

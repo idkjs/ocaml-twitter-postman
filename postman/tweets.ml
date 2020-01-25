@@ -2,6 +2,7 @@ open Lwt
 open Cohttp
 open Cohttp_lwt_unix
 
+
 let token = Sys.getenv "TWITTER_TOKEN";;
 (* print_endline(token) *)
 
@@ -17,5 +18,10 @@ let reqBody =
 (* let get () =
   let tweets = Lwt_main.run reqBody in
   print_endline (tweets) *)
+
+
+  (* let getId () =
+  let id = Lwt_main.run reqBody in
+  print_endline (tweetId id) *)
 
   let get () = let tweets = Lwt_main.run reqBody in tweets
