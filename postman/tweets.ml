@@ -14,4 +14,6 @@ let reqBody =
 
 (* let get () =
   let tweets = Lwt_main.run reqBody in print_endline tweets; tweets *)
-  let get () = let tweets = Lwt_main.run reqBody in tweets
+let get () =
+  let respBody = Lwt_main.run reqBody in
+  print_endline (respBody)
