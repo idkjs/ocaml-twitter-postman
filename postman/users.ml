@@ -24,4 +24,4 @@ let reqBody =
   let id = Lwt_main.run reqBody in
   print_endline (tweetId id) *)
 
-  let get () = let tweets = Lwt_main.run reqBody in tweets
+  let get () = let userInfo = Lwt_main.run reqBody in userInfo
