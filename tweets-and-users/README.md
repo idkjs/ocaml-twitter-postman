@@ -1,4 +1,3 @@
-
 ---
 title: The Postman Rides OCaml - Part 2
 published: true
@@ -24,8 +23,7 @@ This is straight from the docs:
 > ## How to generate a Bearer Token
 
 > Copy the following cURL request into your command line after making changes to the following consumer API keys previously obtained from your Twitter app. Note that the consumer API keys used on this page have been disabled and will not work for real requests.
-> `API key <API key> e.g.xvz1evFS4wEEPTGEFPHBog`
-> `API secret key <API secret key> e.g. L8qq9PZyRg6ieKGEKhZolGC0vJWLw8iEJ88DRdyOg`
+> `API key <API key> e.g.xvz1evFS4wEEPTGEFPHBog` > `API secret key <API secret key> e.g. L8qq9PZyRg6ieKGEKhZolGC0vJWLw8iEJ88DRdyOg`
 
 > ```curl
 > curl -u '<API key>:<API secret key>' \
@@ -218,10 +216,10 @@ dune build
 ➜  tweets-and-users [master*]
 ```
 
-Now we finally get to run `_build/default/tweets_and_users.exe`:
+Now we finally get to run `dune exec ./tweets_and_users.exe`:
 
 ```sh
-➜  tweets-and-users [master*]_build/default/tweets_and_users.exe
+➜  tweets-and-users [master*]dune exec ./tweets_and_users.exe
 Fatal error: exception (Failure "No SSL or TLS support compiled into Conduit")
 ```
 
@@ -265,7 +263,7 @@ dune build
 Let try running it again:
 
 ```sh
-➜  _build/default/tweets_and_users.exe
+➜  dune exec ./tweets_and_users.exe
 ```
 
 returns:
@@ -368,7 +366,7 @@ Compile and run:
 
 ```sh
 ➜ make
-➜ _build/default/tweets_and_users.exe
+➜ dune exec ./tweets_and_users.exe
 {"data":[{"created_at":"2013-12-14T04:35:55.000Z","description":"The voice of Twitter's #DevRel team, and your official sourc
 e for updates, news, & events about Twitter's API.\n\nNeed help? Visit https://t.co/DVDf7qKyS9","entities":{"url":{"urls":[{"
 start":0,"end":23,"url":"https://t.co/3ZX3TNiZCY","expanded_url":"https://developer.twitter.com/en/community","display_url":"
